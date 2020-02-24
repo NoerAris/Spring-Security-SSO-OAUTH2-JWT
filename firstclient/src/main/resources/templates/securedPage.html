@@ -14,11 +14,14 @@
 		Welcome, <span id="user" th:text="${#authentication.name}">Name</span>
 	</div>
 	
+	</br>
 	<form th:action="@{/logout}" method="post" id="userform">
 		<div class="col-sm-12">
 			<button class="btn btn-primary" value="submit">Log Out</button>
+			<button onclick="window.location.href = './username';" class="btn btn-info">Current User</button>
 		</div>
 	</form>
+	</br>
 </div>
 </body>
 </html>
