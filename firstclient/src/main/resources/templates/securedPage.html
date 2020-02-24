@@ -5,6 +5,11 @@
 <title>Spring Security SSO</title>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+<style>
+	.styl{
+	  margin-left: 12px;
+	}
+</style>
 </head>
 
 <body>
@@ -18,9 +23,12 @@
 	<form th:action="@{/logout}" method="post" id="userform">
 		<div class="col-sm-12">
 			<button class="btn btn-primary" value="submit">Log Out</button>
-			<button onclick="window.location.href = './username';" class="btn btn-info">Current User</button>
 		</div>
 	</form>
+	</br>
+	<div>
+		<button onclick="window.location.href = './username';" class="btn btn-info styl">Current User</button>
+	</div>
 	</br>
 </div>
 </body>
