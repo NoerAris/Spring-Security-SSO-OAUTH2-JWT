@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Spring Security SSO</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+</head>
+
+<body>
+<div class="container">
+	<div class="col-sm-12">
+		<h1>Secured Page</h1>
+		Welcome, <span id="user" th:text="${#authentication.name}">Name</span>
+	</div>
+	
+	<form th:action="@{/logout}" method="post" id="userform">
+		<div class="col-sm-12">
+			<button class="btn btn-primary" value="submit">Log Out</button>
+		</div>
+	</form>
+</div>
+</body>
+</html>
