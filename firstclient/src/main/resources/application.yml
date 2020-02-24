@@ -19,4 +19,7 @@ security:
       userInfoUri: http://localhost:8081/auth/user/me
 spring:
   thymeleaf:
-    cache: false        
+    cache: false   
+    
+logging:
+   config : classpath:logback.xml   
